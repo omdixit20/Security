@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliance Documentation</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Compliance Documentation</h1>
+        <ul class="list-group mt-3">
+            <% documents.forEach(function(doc) { %>
+                <li class="list-group-item">
+                    <a href="<%= doc.url %>" target="_blank" rel="noopener noreferrer"><%= doc.title %></a>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html>

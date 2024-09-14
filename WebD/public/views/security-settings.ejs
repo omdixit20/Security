@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Settings</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Security Settings</h1>
+        <div class="card mt-3">
+            <div class="card-body">
+                <h2>Two-Factor Authentication</h2>
+                <p>Status: <span><%= is2FAEnabled ? 'Enabled' : 'Disabled' %></span></p>
+                <form action="/security-settings/toggle-2fa" method="POST">
+                    <button type="submit" class="btn btn-primary">
+                        <%= is2FAEnabled ? 'Disable' : 'Enable' %> Two-Factor Authentication
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    background-color: #f8f9fa;
+    padding-top: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.card {
+    border-radius: 8px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#qr-code {
+    max-width: 100%;
+    height: auto;
+}
